@@ -13,10 +13,10 @@ daughter.__proto__ = mom;
 
 daughter.apply(daughter.firstName, daughter.lastName, daughter.hairColor, daughter.eyeColor);
 
-// function showInfo() {
-//   for (var prop in this) {
-//     console.log(prop + ': ' + daughter[prop]);
-//   }
-// }
+function showInfo() {
+  for (var prop in this) {
+    console.log(prop + ': ' + daughter[prop]);
+  }
+}
 
-// showInfo.apply(daughter);
+showInfo.apply(daughter);
